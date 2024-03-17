@@ -1,0 +1,81 @@
+<header>
+  <div class="container">
+    <p>Home</p>
+
+    <button type="button" (click)="toggle()">
+      <img src="assets/icons/theme/{{ theme }}/iconTheme.svg" />
+    </button>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <section class="perfil">
+      <div class="img-perfil">
+        <img src="assets/images/perfil/img-perfil.jpg" />
+      </div>
+
+      <div class="presentation">
+        <h1>Hi there, I'm Guilherme! 👋</h1>
+        <p>SOFTWARE DEVELOPER</p>
+
+        <btn-primary
+          (submit)="downloadCv()"
+          class="btn"
+          btn-text="Download CV"
+        ></btn-primary>
+      </div>
+    </section>
+
+    <section class="experiences">
+      <h2>Experiences</h2>
+
+      <div class="languages">
+        <img src="assets/icons/theme/{{ theme }}/dev-languages/angular.svg" />
+
+        <img src="assets/icons/theme/{{ theme }}/dev-languages/react.svg" />
+
+        <img
+          src="assets/icons/theme/{{ theme }}/dev-languages/javascript.svg"
+        />
+
+        <img
+          src="assets/icons/theme/{{ theme }}/dev-languages/typescript.svg"
+        />
+
+        <img src="assets/icons/theme/{{ theme }}/dev-languages/sass.svg" />
+
+        <img src="assets/icons/theme/{{ theme }}/dev-languages/java.svg" />
+
+        <img src="assets/icons/theme/{{ theme }}/dev-languages/spring.svg" />
+      </div>
+    </section>
+
+    <section class="about-me">
+      <h2>About me</h2>
+
+      <p>
+        Apaixonado pelo desenvolvimento web desde os 18 anos, brasileiro e
+        nascido em 2004, sou estudante de Sistemas de Informação na Universidade
+        Cruzeiro do Sul. Sou uma pessoa que adora desafios, assim como todo
+        desenvolvedor, mas especialmente aqueles que me tiram da minha zona de
+        conforto, pois minhas maiores evoluções e aprendizados surgiram de
+        momentos em que me vi obrigado a sair dela e enfrentar a vida.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+
+      <project-card></project-card>
+    </section>
+
+    <section class="social-media">
+      <h2>Social media</h2>
+
+      <btn-social></btn-social>
+    </section>
+  </div>
+</main>
+
+<footer><p>Desenvolvido por Guilherme Cardozo</p></footer>

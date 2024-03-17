@@ -1,0 +1,254 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-secondary);
+
+  padding: 0 10px;
+  height: 80px;
+  width: 100%;
+
+  .container {
+    justify-content: space-between;
+
+    width: 100%;
+    p {
+      color: var(--text-primary);
+
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  padding: 20px 10px;
+  margin: 0 auto;
+
+  width: 100%;
+
+  .container {
+    flex-direction: column;
+    .perfil {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      margin-bottom: 30px;
+      width: 100%;
+
+      .img-perfil {
+        margin-bottom: 20px;
+        img {
+          border: 1px dashed #fff;
+          border-radius: 200px;
+
+          width: 200px;
+          height: 200px;
+        }
+      }
+
+      .presentation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        width: 100%;
+        h1 {
+          color: var(--text-primary);
+
+          font-size: 22px;
+          font-weight: 600;
+        }
+
+        p {
+          color: var(--text-secondary);
+
+          font-size: 14px;
+          font-weight: 500;
+
+          margin: 15px 0px;
+        }
+
+        .btn {
+          width: 140px;
+        }
+      }
+    }
+
+    .experiences {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      margin-bottom: 30px;
+      width: 100%;
+
+      .languages {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+
+        img {
+          width: 30px;
+        }
+      }
+    }
+
+    .about-me {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      margin-bottom: 30px;
+      width: 100%;
+      p {
+        color: var(--text-secondary);
+
+        font-size: 16x;
+        font-weight: 400;
+
+        border-left: 5px solid var(--purple-primary);
+        padding-left: 10px;
+      }
+    }
+
+    .projects {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .social-media {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+
+      width: 100%;
+    }
+  }
+
+  h2 {
+    color: var(--text-primary);
+    font-size: 20px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-secondary);
+
+  height: 80px;
+  width: 100%;
+  p {
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1280px;
+}
+
+@media (min-width: 768px) {
+  main {
+    .container {
+      .perfil {
+        justify-content: flex-center;
+        flex-direction: row;
+
+        .img-perfil {
+          margin: 0;
+
+          img {
+            border-radius: 255px;
+            width: 255px;
+            height: 255px;
+          }
+        }
+
+        .presentation {
+          align-items: flex-start;
+          margin-left: 20px;
+
+          h1 {
+            font-size: 26px;
+          }
+
+          p {
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          .btn {
+            height: 55px;
+            width: 160px;
+          }
+        }
+      }
+
+      .experiences {
+        .languages {
+          justify-content: flex-start;
+          gap: 30px;
+          img {
+            width: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    .about-me {
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+  footer {
+    p {
+      font-size: 18px;
+    }
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,42 @@
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  .btn {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    width: 100%;
+    padding: 10px 20px;
+
+    &:disabled {
+      opacity: 0.6;
+    }
+
+    &.primary {
+      color: var(--text-tertiary);
+
+      background: var(--purple-gradient);
+    }
+
+    &.secondary {
+      background: white;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  :host {
+    .btn {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

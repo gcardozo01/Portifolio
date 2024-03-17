@@ -1,0 +1,21 @@
+@for(item of projects(); track item;){
+<div class="project" (click)="githubProject(item.link)">
+  <h3>{{ item.title }}</h3>
+
+  <div class="tecnologies">
+    @for(tec of item.tecnologies; track tec;) {
+    <div class="tec">
+      <p>{{ tec }}</p>
+    </div>
+    }
+  </div>
+
+  <p>{{ item.description }}</p>
+</div>
+}
+
+<btn-primary
+  (submit)="github()"
+  class="btn"
+  btn-text="SEE ALL PROJECTS"
+></btn-primary>
